@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberAdapt · Review-2 Live Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+
+  <!-- ── Controls bar ─────────────────────────────────────────────────── -->
+  <div id="controls-bar">
+    <select id="scenario-select">
+      <option value="L1_normal">L1 · Normal driving</option>
+      <option value="L2_legit_brake">L2 · Severe legitimate braking</option>
+      <option value="L3_moderate_brake">L3 · Moderate legitimate braking</option>
+      <option value="A1_false_brake" selected>A1 · False braking</option>
+      <option value="A2_false_accel">A2 · False acceleration</option>
+      <option value="A3_stealth_ramp">A3 · Stealth acceleration ramp</option>
+      <option value="A4_replay">A4 · Replay</option>
+      <option value="A5_forged">A5 · Forged outsider packets</option>
+    </select>
+
+    <select id="config-select">
+      <option value="D0_none">No protection</option>
+      <option value="D1_ma_abse_ar" selected>MA-ABSE-AR baseline</option>
+      <option value="D1_crypto">Crypto gate only</option>
+      <option value="D2b_binary_hfail">Binary switch · fail-safe headway</option>
+      <option value="CA_full">CyberAdapt (CA_full)</option>
+    </select>
+
+    <label for="seed-input">Seed</label>
+    <input type="number" id="seed-input" value="1" min="1" max="20">
+
+    <button id="btn-run-live">Run Live</button>
+    <button id="btn-compare">Compare MA vs CA</button>
+    <button id="btn-stop" style="display:none">Stop</button>
+    <button id="btn-inject" style="display:none">Inject A1 False Brake</button>
+  </div>
+
+  <!-- ── Platoon view ──────────────────────────────────────────────────── -->
+  <section id="platoon-section">
+    <h2>Platoon View</h2>
+    <canvas id="platoon-canvas" width="900" height="140"></canvas>
+    <div id="platoon-status">Waiting for run...</div>
+  </section>
+
+  <!-- ── Live charts ───────────────────────────────────────────────────── -->
+  <section id="charts-section">
+    <h2>Live Charts</h2>
+    <div id="charts-grid">
+      <div class="chart-panel">
+        <div class="chart-label">Speed (m/s)</div>
+        <canvas id="chart-speed" width="430" height="200"></canvas>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-label">Trust Weight w</div>
+        <canvas id="chart-trust" width="430" height="200"></canvas>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-label">Inter-vehicle Gap (m)</div>
+        <canvas id="chart-gap" width="430" height="200"></canvas>
+      </div>
+      <div class="chart-panel">
+        <div class="chart-label">Anomaly Score S</div>
+        <canvas id="chart-anomaly" width="430" height="200"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Crypto gate log ───────────────────────────────────────────────── -->
+  <section id="crypto-log-section">
+    <h2>Crypto Gate Log (last 20 packets)</h2>
+    <div style="overflow-x:auto">
+      <table id="crypto-log-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Src</th>
+            <th>ZK-TAT&#10003;</th>
+            <th>H-PO&#10003;</th>
+            <th>Bloom Hit</th>
+            <th>ZK-TAT µs</th>
+            <th>H-PO µs</th>
+            <th>Bloom µs</th>
+            <th>Accepted</th>
+          </tr>
+        </thead>
+        <tbody id="crypto-log-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ── Performance table ─────────────────────────────────────────────── -->
+  <section id="performance-section">
+    <h2>Cryptographic Performance (Rust native_results.json)</h2>
+    <table id="perf-table">
+      <thead>
+        <tr>
+          <th>Operation</th>
+          <th>Mean µs</th>
+          <th>P95 µs</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tbody id="perf-body"></tbody>
+    </table>
+    <p id="perf-budget"></p>
+    <p id="perf-neg-tests"></p>
+  </section>
+
+  <!-- ── Scenario results ───────────────────────────────────────────────── -->
+  <section id="scenario-section">
+    <h2>Scenario Results: MA-ABSE-AR vs CyberAdapt</h2>
+    <table id="scenario-table">
+      <thead>
+        <tr>
+          <th rowspan="2">Scenario</th>
+          <th colspan="3">MA-ABSE-AR</th>
+          <th colspan="3">CyberAdapt</th>
+        </tr>
+        <tr>
+          <th>min-gap</th>
+          <th>collisions</th>
+          <th>det-delay</th>
+          <th>min-gap</th>
+          <th>collisions</th>
+          <th>det-delay</th>
+        </tr>
+      </thead>
+      <tbody id="scenario-body"></tbody>
+      <tfoot id="scenario-foot"></tfoot>
+    </table>
+  </section>
+
+  <!-- ── Status bar ───────────────────────────────────────────────────── -->
+  <div id="status-bar">
+    <span id="status-text">Idle</span>
+  </div>
+
+</body>
+</html>

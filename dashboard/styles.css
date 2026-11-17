@@ -1,0 +1,212 @@
+/* CyberAdapt Dashboard – Dark Theme */
+
+/* ── Base ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0d1117;
+  color: #e6edf3;
+  font-family: system-ui, sans-serif;
+}
+
+/* ── Controls bar ── */
+#controls-bar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 12px;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+  align-items: center;
+}
+
+#controls-bar button {
+  padding: 6px 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+
+#btn-run-live {
+  background: #238636;
+  color: #ffffff;
+}
+
+#btn-compare {
+  background: #1f6feb;
+  color: #ffffff;
+}
+
+#btn-stop {
+  background: #da3633;
+  color: #ffffff;
+}
+
+#btn-inject {
+  background: #9e6a03;
+  color: #ffffff;
+}
+
+/* ── Form controls ── */
+select,
+input[type=number] {
+  background: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: system-ui, sans-serif;
+  font-size: 0.875rem;
+}
+
+/* ── Sections ── */
+section {
+  margin: 16px;
+  padding: 16px;
+  background: #161b22;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+}
+
+section h2 {
+  color: #58a6ff;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 6px;
+}
+
+/* ── Charts grid ── */
+#charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ── Canvas ── */
+canvas {
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  background: #0d1117;
+}
+
+#platoon-canvas {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+}
+
+#platoon-status {
+  color: #8b949e;
+  font-size: 0.85rem;
+  margin-top: 6px;
+}
+
+/* ── Tables ── */
+#crypto-log-table,
+#perf-table,
+#scenario-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#crypto-log-table th,
+#perf-table th,
+#scenario-table th {
+  background: #21262d;
+  color: #58a6ff;
+  padding: 6px 10px;
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+#crypto-log-table td,
+#perf-table td,
+#scenario-table td {
+  padding: 5px 10px;
+  border-bottom: 1px solid #21262d;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+#crypto-log-table tr:hover td,
+#perf-table tr:hover td,
+#scenario-table tr:hover td {
+  background: #1c2128;
+}
+
+/* ── Scrollable crypto log wrapper ── */
+#crypto-log-section div[style] {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* ── Status classes ── */
+.zktat-fail {
+  background: #3d1515 !important;
+}
+
+.bloom-hit {
+  background: #2d1f00 !important;
+}
+
+.collision-cell {
+  background: #3d1515 !important;
+  color: #ff7b72;
+  font-weight: bold;
+}
+
+.pass {
+  color: #3fb950;
+}
+
+.fail {
+  color: #ff7b72;
+}
+
+/* ── Trust flash animation ── */
+.trust-flash {
+  animation: flash 0.5s ease-out;
+}
+
+@keyframes flash {
+  0%,
+  100% { outline: none; }
+  50%  { outline: 3px solid #ff7b72; }
+}
+
+/* ── Status bar ── */
+#status-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #161b22;
+  border-top: 1px solid #30363d;
+  padding: 4px 16px;
+  font-size: 0.75rem;
+  color: #8b949e;
+  z-index: 100;
+}
+
+#status-text.running {
+  color: #3fb950;
+}
+
+#status-text.failed {
+  color: #ff7b72;
+}
+
+/* ── Comparison mode ── */
+.compare-label {
+  font-size: 0.7rem;
+  color: #8b949e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}

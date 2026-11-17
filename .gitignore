@@ -1,0 +1,4 @@
+native/target/
+run_logs/*.log
+__pycache__/
+*.py[cod]

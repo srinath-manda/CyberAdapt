@@ -1,0 +1,365 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Write `sim/crypto_gate.py`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762176793
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762238777
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762417087
+      }
+    ],
+    "1.2 Write `sim/trust_supervisor.py`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762177279
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762239163
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762417286
+      }
+    ],
+    "2.1 Define module-level constants, imports, and the `CFG` table": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762177520
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762459305
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764336662
+      }
+    ],
+    "2.2 Implement `w_of_S`, `leader_profile` helpers": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762177774
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762459487
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764337327
+      }
+    ],
+    "2.3 Implement the per-packet crypto pipeline inside `run()`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762177919
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764337810
+      }
+    ],
+    "2.4 Integrate `CyberAdaptTrustController` for CA configs inside `run()`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762178102
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764338422
+      }
+    ],
+    "2.5 Build the return dict and write `results/sim_integrated_results.json`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762178359
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764339087
+      }
+    ],
+    "3. Checkpoint — batch simulator complete": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762178550
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764444446
+      }
+    ],
+    "4.1 Write the `run_live(cfgname, scen, seed, inject_flag, stop_flag)` generator": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762178822
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764339701
+      }
+    ],
+    "5. Checkpoint — simulator complete": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179028
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764444717
+      }
+    ],
+    "6.1 Add shared live-run state and locking": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179245
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764543813
+      }
+    ],
+    "6.2 Implement the `/api/stream` SSE handler": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179455
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764544332
+      }
+    ],
+    "7.1 Implement `POST /api/live`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179677
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764544702
+      }
+    ],
+    "7.2 Implement `POST /api/compare`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179800
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764545153
+      }
+    ],
+    "7.3 Implement `POST /api/inject` and `POST /api/stop`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762179916
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764545527
+      }
+    ],
+    "8. Checkpoint — backend complete": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762180096
+      }
+    ],
+    "9.1 Write `dashboard/index.html` page structure": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762180276
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762239627
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762417595
+      }
+    ],
+    "9.2 Write `dashboard/styles.css`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762180480
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762240002
+      },
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762417886
+      }
+    ],
+    "10.1 Implement SSE client and state management": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762180677
+      }
+    ],
+    "10.2 Implement `updatePlatoon(frame)` on `#platoon-canvas`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762180928
+      }
+    ],
+    "10.3 Implement `updatePlatoonCompare(ma_frame, ca_frame)` for comparison mode": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762181162
+      }
+    ],
+    "11.1 Implement 60-second rolling-window chart rendering": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762181350
+      }
+    ],
+    "11.2 Implement chart series styling and reference lines": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762181569
+      }
+    ],
+    "11.3 Implement `appendChartCompare(frame)` for comparison mode": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762181780
+      }
+    ],
+    "12.1 Implement `updateCryptoLog(entries)` for `#crypto-log-table`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762181970
+      }
+    ],
+    "12.2 Populate `#perf-table` from `/api/data`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762182160
+      }
+    ],
+    "12.3 Populate `#scenario-table` from `/api/data`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762182358
+      }
+    ],
+    "13. Checkpoint — frontend complete": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762182645
+      }
+    ],
+    "14.1 Write structural unit tests": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762182818
+      }
+    ],
+    "14.2 Write integration test: ZK-TAT forgery (Property 3)": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762182988
+      }
+    ],
+    "14.3 Write integration test: SSE timing": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762183181
+      }
+    ],
+    "15. Final checkpoint — full system": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762183388
+      }
+    ],
+    "9. Write `dashboard/index.html` and `dashboard/styles.css`": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794762418102
+      }
+    ],
+    "2. Implement `sim/sim_integrated.py` — batch `run()` function": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764339350
+      }
+    ],
+    "4. Implement `sim/sim_integrated.py` — `run_live()` generator": [
+      {
+        "executionId": "32bf8ff9-70ed-4878-9ce7-d791ed39b48d",
+        "chatSessionId": "sess_7b43cfe5-3a2e-493d-a500-ed31ebcfb101",
+        "timestamp": 1794764339868
+      }
+    ]
+  }
+}
